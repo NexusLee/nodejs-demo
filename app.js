@@ -8,12 +8,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var http = require('http');
+var ejs =require('ejs');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.engine('.html', ejs.__express);
+app.set('view engine', 'html');
+//app.set('view engine', 'ejs');
 
 app.use(favicon());
 app.use(logger('dev'));
@@ -24,6 +27,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+app.get('/', routes.index);
+app.get('/login', routes.login);
+app.post('/login', routes.doLogin);
+app.get('/logout', routes.logout);
+app.get('/home', routes.home);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
