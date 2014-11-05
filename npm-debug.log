@@ -1,29 +1,420 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'D:\\Program Files\\nodejs\\\\node.exe',
-1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
-2 info using npm@1.4.15
-3 info using node@v0.10.28
-4 verbose node symlink D:\Program Files\nodejs\\node.exe
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart nodejs-demo@0.0.1
-7 info start nodejs-demo@0.0.1
-8 verbose unsafe-perm in lifecycle true
-9 info nodejs-demo@0.0.1 Failed to exec start script
-10 error nodejs-demo@0.0.1 start: `node ./bin/www`
-10 error Exit status 8
-11 error Failed at the nodejs-demo@0.0.1 start script.
-11 error This is most likely a problem with the nodejs-demo package,
-11 error not with npm itself.
-11 error Tell the author that this fails on your system:
-11 error     node ./bin/www
-11 error You can get their info via:
-11 error     npm owner ls nodejs-demo
-11 error There is likely additional logging output above.
-12 error System Windows_NT 6.1.7601
-13 error command "D:\\Program Files\\nodejs\\\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-14 error cwd D:\node\nodejs-demo
-15 error node -v v0.10.28
-16 error npm -v 1.4.15
-17 error code ELIFECYCLE
-18 verbose exit [ 1, true ]
+1 verbose cli [ 'E:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'canvas' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink E:\Program Files\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'canvas', null ]
+7 verbose cache add name=undefined spec="canvas" args=["canvas",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'canvas',
+8 verbose parsed url   path: 'canvas',
+8 verbose parsed url   href: 'canvas' }
+9 silly lockFile 7aa15835-canvas canvas
+10 verbose lock canvas C:\Users\Administrator\AppData\Roaming\npm-cache\7aa15835-canvas.lock
+11 silly lockFile 7aa15835-canvas canvas
+12 silly lockFile 7aa15835-canvas canvas
+13 verbose addNamed [ 'canvas', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 7328b956-canvas canvas@
+16 verbose lock canvas@ C:\Users\Administrator\AppData\Roaming\npm-cache\7328b956-canvas.lock
+17 silly addNameRange { name: 'canvas', range: '*', hasData: false }
+18 verbose url raw canvas
+19 verbose url resolving [ 'https://registry.npmjs.org/', './canvas' ]
+20 verbose url resolved https://registry.npmjs.org/canvas
+21 info trying registry request attempt 1 at 14:53:43
+22 http GET https://registry.npmjs.org/canvas
+23 http 200 https://registry.npmjs.org/canvas
+24 silly registry.get cb [ 200,
+24 silly registry.get   { date: 'Mon, 03 Nov 2014 06:50:38 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     etag: '"5CU8O0HVRTIXOOV4MLT3ICTZ5"',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     'content-length': '62278',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '1',
+24 silly registry.get     'x-timer': 'S1414997438.826742,VS0,VE113',
+24 silly registry.get     vary: 'Accept',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly addNameRange number 2 { name: 'canvas', range: '*', hasData: true }
+26 silly addNameRange versions [ 'canvas',
+26 silly addNameRange   [ '0.0.1',
+26 silly addNameRange     '0.0.2',
+26 silly addNameRange     '0.0.3',
+26 silly addNameRange     '0.0.4',
+26 silly addNameRange     '0.0.5',
+26 silly addNameRange     '0.0.6',
+26 silly addNameRange     '0.0.7',
+26 silly addNameRange     '0.0.8',
+26 silly addNameRange     '0.1.0',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.3.2',
+26 silly addNameRange     '0.3.3',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.4.2',
+26 silly addNameRange     '0.4.3',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.5.1',
+26 silly addNameRange     '0.5.2',
+26 silly addNameRange     '0.5.3',
+26 silly addNameRange     '0.5.4',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.7.1',
+26 silly addNameRange     '0.7.2',
+26 silly addNameRange     '0.7.3',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.8.2',
+26 silly addNameRange     '0.8.3',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.10.0',
+26 silly addNameRange     '0.10.1',
+26 silly addNameRange     '0.10.2',
+26 silly addNameRange     '0.10.3',
+26 silly addNameRange     '0.11.0',
+26 silly addNameRange     '0.11.1',
+26 silly addNameRange     '0.11.2',
+26 silly addNameRange     '0.11.3',
+26 silly addNameRange     '0.12.0',
+26 silly addNameRange     '0.12.1',
+26 silly addNameRange     '0.13.0',
+26 silly addNameRange     '0.13.1',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.0.2',
+26 silly addNameRange     '1.0.3',
+26 silly addNameRange     '1.0.4',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '1.1.1',
+26 silly addNameRange     '1.1.2',
+26 silly addNameRange     '1.1.3',
+26 silly addNameRange     '1.1.4',
+26 silly addNameRange     '1.1.5',
+26 silly addNameRange     '1.1.6' ] ]
+27 verbose addNamed [ 'canvas', '1.1.6' ]
+28 verbose addNamed [ '1.1.6', '1.1.6' ]
+29 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+30 verbose lock canvas@1.1.6 C:\Users\Administrator\AppData\Roaming\npm-cache\4f76786f-canvas-1-1-6.lock
+31 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+32 verbose lock https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz',
+33 verbose addRemoteTarball   'd84b088f3bcd3840fe14977cd3625f5fe89f81ee' ]
+34 info retry fetch attempt 1 at 14:53:45
+35 verbose fetch to= C:\Users\ADMINI~1\AppData\Local\Temp\npm-5824-mOLKdwTo\registry.npmjs.org\canvas\-\canvas-1.1.6.tgz
+36 http GET https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+37 http 200 https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+38 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+39 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+40 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+41 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+42 silly lockFile 7328b956-canvas canvas@
+43 silly lockFile 7328b956-canvas canvas@
+44 silly resolved [ { name: 'canvas',
+44 silly resolved     description: 'Canvas graphics API backed by Cairo',
+44 silly resolved     version: '1.1.6',
+44 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+44 silly resolved     contributors: [ [Object], [Object], [Object] ],
+44 silly resolved     keywords:
+44 silly resolved      [ 'canvas',
+44 silly resolved        'graphic',
+44 silly resolved        'graphics',
+44 silly resolved        'pixman',
+44 silly resolved        'cairo',
+44 silly resolved        'image',
+44 silly resolved        'images',
+44 silly resolved        'pdf' ],
+44 silly resolved     homepage: 'https://github.com/learnboost/node-canvas',
+44 silly resolved     repository: { type: 'git', url: 'git://github.com/learnboost/node-canvas' },
+44 silly resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+44 silly resolved     dependencies: { nan: '~1.2.0' },
+44 silly resolved     devDependencies: { express: '3.0', jade: '0.28.1', mocha: '*', should: '*' },
+44 silly resolved     engines: { node: '>= 0.6.0' },
+44 silly resolved     main: './lib/canvas.js',
+44 silly resolved     gypfile: true,
+44 silly resolved     gitHead: '138abe9aa30b75e8406ceddd9177bff20ac44ceb',
+44 silly resolved     bugs: { url: 'https://github.com/learnboost/node-canvas/issues' },
+44 silly resolved     _id: 'canvas@1.1.6',
+44 silly resolved     _shasum: 'd84b088f3bcd3840fe14977cd3625f5fe89f81ee',
+44 silly resolved     _from: 'canvas@',
+44 silly resolved     _npmVersion: '1.4.21',
+44 silly resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+44 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+44 silly resolved     dist:
+44 silly resolved      { shasum: 'd84b088f3bcd3840fe14977cd3625f5fe89f81ee',
+44 silly resolved        tarball: 'http://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz' },
+44 silly resolved     directories: {},
+44 silly resolved     _resolved: 'https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz' } ]
+45 info install canvas@1.1.6 into C:\Users\Administrator\Documents\GitHub\nodejs-demo
+46 info installOne canvas@1.1.6
+47 info C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas unbuild
+48 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\canvas\1.1.6\package.tgz
+49 silly lockFile 77acbc9f--nodejs-demo-node-modules-canvas tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas
+50 verbose lock tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas C:\Users\Administrator\AppData\Roaming\npm-cache\77acbc9f--nodejs-demo-node-modules-canvas.lock
+51 silly lockFile 59fee868-m-cache-canvas-1-1-6-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\canvas\1.1.6\package.tgz
+52 verbose lock tar://C:\Users\Administrator\AppData\Roaming\npm-cache\canvas\1.1.6\package.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\59fee868-m-cache-canvas-1-1-6-package-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm extractEntry .npmignore
+56 silly gunzTarPerm extractEntry index.js
+57 silly gunzTarPerm extractEntry History.md
+58 silly gunzTarPerm extractEntry Makefile
+59 silly gunzTarPerm extractEntry Readme.md
+60 silly gunzTarPerm extractEntry binding.gyp
+61 silly gunzTarPerm extractEntry .gitmodules
+62 silly gunzTarPerm extractEntry install
+63 silly gunzTarPerm extractEntry lib/bindings.js
+64 silly gunzTarPerm extractEntry lib/canvas.js
+65 silly gunzTarPerm extractEntry lib/context2d.js
+66 silly gunzTarPerm extractEntry lib/image.js
+67 silly gunzTarPerm extractEntry lib/jpegstream.js
+68 silly gunzTarPerm extractEntry lib/pixelarray.js
+69 silly gunzTarPerm extractEntry lib/pngstream.js
+70 silly gunzTarPerm extractEntry src/Image.h
+71 silly gunzTarPerm extractEntry src/Canvas.cc
+72 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+73 silly gunzTarPerm extractEntry src/CanvasGradient.h
+74 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+75 silly gunzTarPerm extractEntry src/CanvasPattern.h
+76 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+77 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+78 silly gunzTarPerm extractEntry src/FontFace.cc
+79 silly gunzTarPerm extractEntry src/FontFace.h
+80 silly gunzTarPerm extractEntry src/Image.cc
+81 silly gunzTarPerm extractEntry src/Canvas.h
+82 silly gunzTarPerm extractEntry src/ImageData.cc
+83 silly gunzTarPerm extractEntry src/ImageData.h
+84 silly gunzTarPerm extractEntry src/JPEGStream.h
+85 silly gunzTarPerm extractEntry src/PNG.h
+86 silly gunzTarPerm extractEntry src/PixelArray.cc
+87 silly gunzTarPerm extractEntry src/PixelArray.h
+88 silly gunzTarPerm extractEntry src/Point.h
+89 silly gunzTarPerm extractEntry src/closure.h
+90 silly gunzTarPerm extractEntry src/color.cc
+91 silly gunzTarPerm extractEntry src/color.h
+92 silly gunzTarPerm extractEntry src/init.cc
+93 silly gunzTarPerm extractEntry .travis.yml
+94 silly gunzTarPerm extractEntry util/cairo_include.sh
+95 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+96 silly gunzTarPerm extractEntry util/has_lib.sh
+97 silly gunzTarPerm extractEntry util/lib_lookup.sh
+98 silly lockFile 77acbc9f--nodejs-demo-node-modules-canvas tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas
+99 silly lockFile 77acbc9f--nodejs-demo-node-modules-canvas tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas
+100 silly lockFile 59fee868-m-cache-canvas-1-1-6-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\canvas\1.1.6\package.tgz
+101 silly lockFile 59fee868-m-cache-canvas-1-1-6-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\canvas\1.1.6\package.tgz
+102 info preinstall canvas@1.1.6
+103 verbose readDependencies using package.json deps
+104 verbose readDependencies using package.json deps
+105 verbose cache add [ 'nan@~1.2.0', null ]
+106 verbose cache add name=undefined spec="nan@~1.2.0" args=["nan@~1.2.0",null]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: 'nan@~1.2.0',
+107 verbose parsed url   path: 'nan@~1.2.0',
+107 verbose parsed url   href: 'nan@~1.2.0' }
+108 verbose cache add name="nan" spec="~1.2.0" args=["nan","~1.2.0"]
+109 verbose parsed url { protocol: null,
+109 verbose parsed url   slashes: null,
+109 verbose parsed url   auth: null,
+109 verbose parsed url   host: null,
+109 verbose parsed url   port: null,
+109 verbose parsed url   hostname: null,
+109 verbose parsed url   hash: null,
+109 verbose parsed url   search: null,
+109 verbose parsed url   query: null,
+109 verbose parsed url   pathname: '~1.2.0',
+109 verbose parsed url   path: '~1.2.0',
+109 verbose parsed url   href: '~1.2.0' }
+110 verbose addNamed [ 'nan', '~1.2.0' ]
+111 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+112 silly lockFile 6bb36ab7-nan-1-2-0 nan@~1.2.0
+113 verbose lock nan@~1.2.0 C:\Users\Administrator\AppData\Roaming\npm-cache\6bb36ab7-nan-1-2-0.lock
+114 silly addNameRange { name: 'nan', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+115 verbose url raw nan
+116 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+117 verbose url resolved https://registry.npmjs.org/nan
+118 info trying registry request attempt 1 at 14:53:49
+119 verbose etag "4QHBB3KM0BSFWQGU7N2BM6J49"
+120 http GET https://registry.npmjs.org/nan
+121 http 200 https://registry.npmjs.org/nan
+122 silly registry.get cb [ 200,
+122 silly registry.get   { date: 'Mon, 03 Nov 2014 06:50:44 GMT',
+122 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+122 silly registry.get     etag: '"AT2XJNDBWQ2S97BEVICH8DLJ7"',
+122 silly registry.get     'content-type': 'application/json',
+122 silly registry.get     'cache-control': 'max-age=60',
+122 silly registry.get     'content-length': '79735',
+122 silly registry.get     'accept-ranges': 'bytes',
+122 silly registry.get     via: '1.1 varnish',
+122 silly registry.get     age: '3',
+122 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+122 silly registry.get     'x-cache': 'HIT',
+122 silly registry.get     'x-cache-hits': '7',
+122 silly registry.get     'x-timer': 'S1414997444.590390,VS0,VE0',
+122 silly registry.get     vary: 'Accept',
+122 silly registry.get     'keep-alive': 'timeout=10, max=50',
+122 silly registry.get     connection: 'Keep-Alive' } ]
+123 silly addNameRange number 2 { name: 'nan', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+124 silly addNameRange versions [ 'nan',
+124 silly addNameRange   [ '0.3.0-wip',
+124 silly addNameRange     '0.3.0-wip2',
+124 silly addNameRange     '0.3.0',
+124 silly addNameRange     '0.3.1',
+124 silly addNameRange     '0.3.2',
+124 silly addNameRange     '0.4.0',
+124 silly addNameRange     '0.4.1',
+124 silly addNameRange     '0.4.2',
+124 silly addNameRange     '0.4.3',
+124 silly addNameRange     '0.4.4',
+124 silly addNameRange     '0.5.0',
+124 silly addNameRange     '0.5.1',
+124 silly addNameRange     '0.5.2',
+124 silly addNameRange     '0.6.0',
+124 silly addNameRange     '0.7.0',
+124 silly addNameRange     '0.7.1',
+124 silly addNameRange     '0.8.0',
+124 silly addNameRange     '1.0.0',
+124 silly addNameRange     '1.1.0',
+124 silly addNameRange     '1.1.1',
+124 silly addNameRange     '1.1.2',
+124 silly addNameRange     '1.2.0',
+124 silly addNameRange     '1.3.0',
+124 silly addNameRange     '1.4.0' ] ]
+125 verbose addNamed [ 'nan', '1.2.0' ]
+126 verbose addNamed [ '1.2.0', '1.2.0' ]
+127 silly lockFile 859d0f28-nan-1-2-0 nan@1.2.0
+128 verbose lock nan@1.2.0 C:\Users\Administrator\AppData\Roaming\npm-cache\859d0f28-nan-1-2-0.lock
+129 silly lockFile 343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+130 verbose lock https://registry.npmjs.org/nan/-/nan-1.2.0.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz.lock
+131 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.2.0.tgz',
+131 verbose addRemoteTarball   '9c4d63ce9e4f8e95de2d574e18f7925554a8a8ef' ]
+132 info retry fetch attempt 1 at 14:53:53
+133 verbose fetch to= C:\Users\ADMINI~1\AppData\Local\Temp\npm-5824-mOLKdwTo\registry.npmjs.org\nan\-\nan-1.2.0.tgz
+134 http GET https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+135 http 200 https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+136 silly lockFile 343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+137 silly lockFile 343fa712-stry-npmjs-org-nan-nan-1-2-0-tgz https://registry.npmjs.org/nan/-/nan-1.2.0.tgz
+138 silly lockFile 859d0f28-nan-1-2-0 nan@1.2.0
+139 silly lockFile 859d0f28-nan-1-2-0 nan@1.2.0
+140 silly lockFile 6bb36ab7-nan-1-2-0 nan@~1.2.0
+141 silly lockFile 6bb36ab7-nan-1-2-0 nan@~1.2.0
+142 silly resolved [ { name: 'nan',
+142 silly resolved     version: '1.2.0',
+142 silly resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+142 silly resolved     main: 'include_dirs.js',
+142 silly resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+142 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+142 silly resolved     license: 'MIT',
+142 silly resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+142 silly resolved     homepage: 'https://github.com/rvagg/nan',
+142 silly resolved     _id: 'nan@1.2.0',
+142 silly resolved     dist:
+142 silly resolved      { shasum: '9c4d63ce9e4f8e95de2d574e18f7925554a8a8ef',
+142 silly resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.2.0.tgz' },
+142 silly resolved     _from: 'nan@~1.2.0',
+142 silly resolved     _npmVersion: '1.4.3',
+142 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+142 silly resolved     maintainers: [ [Object] ],
+142 silly resolved     directories: {},
+142 silly resolved     _shasum: '9c4d63ce9e4f8e95de2d574e18f7925554a8a8ef',
+142 silly resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.2.0.tgz' } ]
+143 info install nan@1.2.0 into C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas
+144 info installOne nan@1.2.0
+145 info C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan unbuild
+146 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\nan\1.2.0\package.tgz
+147 silly lockFile e1c729dd--modules-canvas-node-modules-nan tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan
+148 verbose lock tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan C:\Users\Administrator\AppData\Roaming\npm-cache\e1c729dd--modules-canvas-node-modules-nan.lock
+149 silly lockFile a0acdbb3--npm-cache-nan-1-2-0-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\nan\1.2.0\package.tgz
+150 verbose lock tar://C:\Users\Administrator\AppData\Roaming\npm-cache\nan\1.2.0\package.tgz C:\Users\Administrator\AppData\Roaming\npm-cache\a0acdbb3--npm-cache-nan-1-2-0-package-tgz.lock
+151 silly gunzTarPerm modes [ '755', '644' ]
+152 silly gunzTarPerm extractEntry package.json
+153 silly gunzTarPerm extractEntry README.md
+154 silly gunzTarPerm extractEntry LICENSE
+155 silly gunzTarPerm extractEntry include_dirs.js
+156 silly gunzTarPerm extractEntry .dntrc
+157 silly gunzTarPerm extractEntry build/config.gypi
+158 silly gunzTarPerm extractEntry nan.h
+159 silly lockFile e1c729dd--modules-canvas-node-modules-nan tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan
+160 silly lockFile e1c729dd--modules-canvas-node-modules-nan tar://C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan
+161 silly lockFile a0acdbb3--npm-cache-nan-1-2-0-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\nan\1.2.0\package.tgz
+162 silly lockFile a0acdbb3--npm-cache-nan-1-2-0-package-tgz tar://C:\Users\Administrator\AppData\Roaming\npm-cache\nan\1.2.0\package.tgz
+163 info preinstall nan@1.2.0
+164 verbose readDependencies using package.json deps
+165 verbose readDependencies using package.json deps
+166 silly resolved []
+167 verbose about to build C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan
+168 info build C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas\node_modules\nan
+169 verbose linkStuff [ false,
+169 verbose linkStuff   false,
+169 verbose linkStuff   false,
+169 verbose linkStuff   'C:\\Users\\Administrator\\Documents\\GitHub\\nodejs-demo\\node_modules\\canvas\\node_modules' ]
+170 info linkStuff nan@1.2.0
+171 verbose linkBins nan@1.2.0
+172 verbose linkMans nan@1.2.0
+173 verbose rebuildBundles nan@1.2.0
+174 info install nan@1.2.0
+175 info postinstall nan@1.2.0
+176 verbose about to build C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas
+177 info build C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas
+178 verbose linkStuff [ false,
+178 verbose linkStuff   false,
+178 verbose linkStuff   false,
+178 verbose linkStuff   'C:\\Users\\Administrator\\Documents\\GitHub\\nodejs-demo\\node_modules' ]
+179 info linkStuff canvas@1.1.6
+180 verbose linkBins canvas@1.1.6
+181 verbose linkMans canvas@1.1.6
+182 verbose rebuildBundles canvas@1.1.6
+183 verbose rebuildBundles [ 'nan' ]
+184 info install canvas@1.1.6
+185 verbose unsafe-perm in lifecycle true
+186 info canvas@1.1.6 Failed to exec install script
+187 info C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules\canvas unbuild
+188 info preuninstall canvas@1.1.6
+189 info uninstall canvas@1.1.6
+190 verbose true,C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules,C:\Users\Administrator\Documents\GitHub\nodejs-demo\node_modules unbuild canvas@1.1.6
+191 info postuninstall canvas@1.1.6
+192 error canvas@1.1.6 install: `node-gyp rebuild`
+192 error Exit status 1
+193 error Failed at the canvas@1.1.6 install script.
+193 error This is most likely a problem with the canvas package,
+193 error not with npm itself.
+193 error Tell the author that this fails on your system:
+193 error     node-gyp rebuild
+193 error You can get their info via:
+193 error     npm owner ls canvas
+193 error There is likely additional logging output above.
+194 error System Windows_NT 6.1.7601
+195 error command "E:\\Program Files\\nodejs\\\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "canvas"
+196 error cwd C:\Users\Administrator\Documents\GitHub\nodejs-demo
+197 error node -v v0.10.29
+198 error npm -v 1.4.14
+199 error code ELIFECYCLE
+200 verbose exit [ 1, true ]

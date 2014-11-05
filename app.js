@@ -28,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-app.use('/login', routes);/*
+//app.use('/login', routes);
+/*
 app.post('/login', routes);
 app.get('/logout', routes);
 app.get('/home', routes);*/

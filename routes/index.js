@@ -9,29 +9,29 @@ router.get('/', function(req, res) {
 router.get('index' , function(req, res){
     res.render('index.html', { title: 'Index' });
 });*/
-router.get('login', function(req, res){
+router.get('/login', function(req, res){
     res.render('login', { title: '用户登陆'});
 });
-router.get('doLogin' , function(req, res){
+router.get('/doLogin' , function(req, res){
     var user={
         username:'admin',
         password:'admin'
     }
     if(req.body.username===user.username && req.body.password===user.password){
-        res.redirect('/home.html');
+        res.redirect('/home');
     }
-    res.redirect('/login.html');
+    res.redirect('/login');
 });
 
-router.get('logout', function(req, res){
+router.get('/logout', function(req, res){
     res.redirect('/');
 });
-router.get('home', function(req, res){
+router.get('/home', function(req, res){
     var user={
         username:'admin',
         password:'admin'
     }
-    res.render('home.html', { title: 'Home',user: user});
+    res.render('home', { title: 'Home',user: user});
 });
 
 
