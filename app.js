@@ -41,9 +41,10 @@ app.use(session({
     resave: true
 }));
 
-//app.use(function (req, res, next) {
-//    res.locals.user = req.session.user;
-//})
+app.use(function (req, res, next) {
+    res.locals.user = req.session.user;
+    next();
+})
 
 app.use(express.static(path.join(__dirname, 'public')));
 

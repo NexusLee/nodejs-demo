@@ -5,6 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
+router.get('/index', function(req, res) {
+    res.render('index', { title: 'Express' });
+});
 /*
 router.get('index' , function(req, res){
     res.render('index.html', { title: 'Index' });
@@ -12,7 +15,9 @@ router.get('index' , function(req, res){
 router.get('/login', function(req, res){
     res.render('login', { title: '用户登陆'});
 });
-router.get('/doLogin' , function(req, res){
+router.post('/login', doLogin);
+
+function doLogin(req, res){
     var user={
         username:'admin',
         password:'admin'
@@ -21,9 +26,10 @@ router.get('/doLogin' , function(req, res){
         res.redirect('/home');
     }
     res.redirect('/login');
-});
+};
 
 router.get('/logout', function(req, res){
+    req.session.user=null;
     res.redirect('/');
 });
 router.get('/home', function(req, res){
