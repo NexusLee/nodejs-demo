@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var Auth = require('./models/auth.js');
 var http = require('http');
 var ejs = require('ejs');
 
@@ -43,6 +44,10 @@ app.use(session({
 
 app.use(function (req, res, next) {
     res.locals.user = req.session.user;
+    var err = req.session.error;
+    delete req.session.error;
+    res.locals.message = '';
+    if (err) res.locals.message = '<div class="alert alert-error">' + err + '</div>';
     next();
 })
 
@@ -50,13 +55,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-
+app.all('/login', Auth.prototype.notAuthentication);
 //app.use('/login', routes);
 /*
  app.post('/login', routes);
  app.get('/logout', routes);
  app.get('/home', routes);*/
-
+/*
+app.use(function(req, res, next){
+    res.locals.user = req.session.user;
+    var err = req.session.error;
+    delete req.session.error;
+    res.locals.message = '';
+    if (err) res.locals.message = '<div class="alert alert-error">' + err + '</div>';
+    next();
+});
+*/
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
