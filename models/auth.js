@@ -10,6 +10,7 @@ Auth.prototype.authentication = function(req, res, next){
         return res.redirect('/login');
     }
     next();
+
 }
 
 Auth.prototype.notAuthentication = function (req, res, next) {
@@ -17,7 +18,13 @@ Auth.prototype.notAuthentication = function (req, res, next) {
         req.session.error='已登陆';
         return res.redirect('/');
     }
-    next();
+    else{
+        req.session.error='已sssssssss登陆';
+        return res.redirect('/');
+
+    }
+  //  next();
+    //routes.doLogin();
 }
 
 module.exports = Auth;

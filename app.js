@@ -57,10 +57,10 @@ app.use('/', routes);
 app.use('/users', users);
 app.all('/login', Auth.prototype.notAuthentication);
 //app.use('/login', routes);
-/*
+
  app.post('/login', routes);
  app.get('/logout', routes);
- app.get('/home', routes);*/
+ app.get('/home', routes);
 /*
 app.use(function(req, res, next){
     res.locals.user = req.session.user;
