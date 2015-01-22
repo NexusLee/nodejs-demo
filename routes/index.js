@@ -7,23 +7,21 @@ var Auth = require('../models/auth.js');
 router.get('/', function(req, res) {
     res.render('index', { title: 'Express' });
 });
-
 router.get('/index', function(req, res) {
     res.render('index', { title: 'Express' });
 });
-
 router.get('/login',checkNotLogin);
 router.get('/login', function(req, res){
     res.render('login', { title: '用户登陆'});
 });
-
 router.post('/login',checkLogin);
 router.post('/login',doLogin);
-
 router.get('/home',authentication);
 router.get('/home', function(req, res){
     res.render('home', { title: '用户登陆'});
 });
+
+
 
 function checkNotLogin(req, res, next) {
     if (req.session.user) {

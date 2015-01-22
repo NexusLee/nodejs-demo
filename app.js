@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var movies = require('./routes/movie');
 var Auth = require('./models/auth.js');
 var http = require('http');
 var ejs = require('ejs');
@@ -61,7 +62,12 @@ app.use('/users', users);
  app.post('/login', routes);
  app.get('/logout', routes);
  app.get('/home', routes);
-app.get('/mypage', routes);
+
+
+app.get('/movie/add',movies);//增加
+app.post('/movie/add',movies);//提交
+app.get('/movie/:name',movies);//编辑查询
+app.get('/movie/json/:name',movies);//JSON数据
 /*
 app.use(function(req, res, next){
     res.locals.user = req.session.user;
